@@ -110,7 +110,7 @@ export default {
         sex: "女",
         workYears: "3年",
         address: "成都",
-        tel: "13540020385"
+        tel: "135****0385"
       },
       workList: [
         {
