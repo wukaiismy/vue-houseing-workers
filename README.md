@@ -8,7 +8,7 @@
 
 ### 技术栈
 
-> vue 全家桶 、axios、Muse-UI、 flexible.js、高德地图 api、天气预报 api、mescroll
+> vue 全家桶 、axios、Muse-UI、 flexible.js、高德地图 api、天气预报 api、mescroll、vueg 转场特效、图灵机器人
 
 ---
 

@@ -3,7 +3,7 @@
     <mu-container>
       <mu-bottom-nav :value="bottomNav" @change="handleChange">
         <mu-bottom-nav-item value="0" title="首页" icon="home" to="/"></mu-bottom-nav-item>
-        <mu-bottom-nav-item value="1" title="消息" icon="message" to="/"></mu-bottom-nav-item>
+        <mu-bottom-nav-item value="1" title="消息" icon="message" to="/MsgHome"></mu-bottom-nav-item>
         <mu-bottom-nav-item value="2" title="好友" icon="favorite" to="/FriendList"></mu-bottom-nav-item>
         <mu-bottom-nav-item value="3" title="我的" icon="perm_identity" to="/MyCenter"></mu-bottom-nav-item>
       </mu-bottom-nav>

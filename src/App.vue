@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view v-transition/>
+    <router-view v-transition class="slcdss"/>
     <Foot v-show="$route.meta.navShow"/>
   </div>
 </template>
@@ -54,6 +54,7 @@ body {
   /* max-width: 7.5rem; */
   margin: 0 auto;
   font-family: PingFangSC-Regular;
+  background-color: #f9f9f9;
 }
 * {
   box-sizing: border-box;
@@ -73,4 +74,7 @@ body {
 // *:after {
 //   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 // } */
+.slcdss {
+  min-height: 100vh;
+}
 </style>

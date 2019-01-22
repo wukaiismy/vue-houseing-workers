@@ -110,6 +110,7 @@ import NavBack from "./public/NavBack1";
 import TimeShow from "./public/TimeShow";
 import { slider, slideritem } from "vue-concise-slider"; // import slider component
 import { mapGetters } from "vuex";
+import openMapApp from "./business/public/Nav.js";
 
 export default {
   name: "Homepage",
@@ -186,6 +187,11 @@ export default {
   },
 
   methods: {
+    // 导航104.063801,30.577099&name=成都交子金融科技中心
+    navJump() {
+      console.log(6666);
+      openMapApp("30.576929", "104.068577", "孵化园");
+    },
     // Listener event
     slide(data) {
       // console.log(data)
@@ -211,7 +217,7 @@ export default {
         this.$router.push({
           path: "/MsgList"
         });
-      }, 2000);
+      }, 1000);
     },
     // 其他按钮
     otherJump() {
@@ -220,7 +226,7 @@ export default {
       this.changeIndex = "2";
       setTimeout(() => {
         this.seleted1 = false;
-      }, 2000);
+      }, 1000);
     },
     // 接单按钮
     taskJump() {
@@ -229,7 +235,10 @@ export default {
       this.changeIndex = "3";
       setTimeout(() => {
         this.seleted1 = false;
-      }, 2000);
+        this.$router.push({
+          path: "/SubmitOrders"
+        });
+      }, 1000);
     },
     // 任务按钮
     workJump() {
@@ -241,7 +250,7 @@ export default {
         this.$router.push({
           path: "/Task"
         });
-      }, 2000);
+      }, 1000);
     },
     changeMenu() {
       this.indexs = !this.indexs;

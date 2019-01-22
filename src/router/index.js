@@ -57,34 +57,25 @@ export default new Router({
       name: "SubmitOrders",
       component: () => import("@/components/business/SubmitOrders"),
       meta: {
-        title: "demo-快速下单",
+        title: "demo-接单页面",
         navShow: false
       }
     },
     {
-      path: "/QuickOrder",
-      name: "QuickOrder",
-      component: () => import("@/components/business/QuickOrder"),
+      path: "/MsgHome",
+      name: "MsgHome",
+      component: () => import("@/components/MessageWall/MsgHome"),
       meta: {
-        title: "demo-快速下单",
-        navShow: false
+        title: "demo-WeChat",
+        navShow: true
       }
     },
     {
-      path: "/MoreMsg",
-      name: "MoreMsg",
-      component: () => import("@/components/business/MoreMsg"),
+      path: "/WeChatShow",
+      name: "WeChatShow",
+      component: () => import("@/components/MessageWall/WeChatShow"),
       meta: {
-        title: "demo-more",
-        navShow: false
-      }
-    },
-    {
-      path: "/Details",
-      name: "Details",
-      component: () => import("@/components/business/Details"),
-      meta: {
-        title: "demo-Details",
+        title: "demo-WeChatShow",
         navShow: false
       }
     },
@@ -113,6 +104,15 @@ export default new Router({
       component: () => import("@/components/maps/MyAdds"),
       meta: {
         title: "demo-MyAdds",
+        navShow: false
+      }
+    },
+    {
+      path: "/WorkingShow",
+      name: "WorkingShow",
+      component: () => import("@/components/maps/WorkingShow"),
+      meta: {
+        title: "demo-WorkingShow",
         navShow: false
       }
     },

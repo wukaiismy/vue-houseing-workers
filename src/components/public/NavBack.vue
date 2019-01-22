@@ -78,9 +78,11 @@ export default {
 .icon {
   width: 0.4rem;
   position: absolute;
-  top: -0.64rem;
+  top: 0.44rem;
   left: 0.32rem;
   fill: white;
   overflow: hidden;
+  height: 0.88rem;
+  /* line-height: 0.88rem; */
 }
 </style>
