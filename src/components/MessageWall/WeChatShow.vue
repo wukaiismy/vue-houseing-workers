@@ -56,7 +56,7 @@ export default {
   mounted() {
     this.scrollToBottom();
   },
-  //每次页面渲染完之后滚动条在最底部
+  //每次页面渲染完之后滚动条在最底部sss  dd
   updated() {
     this.scrollToBottom();
   },
