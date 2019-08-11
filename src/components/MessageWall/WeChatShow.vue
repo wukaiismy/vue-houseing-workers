@@ -1,27 +1,27 @@
 <template>
   <div class="bigbox">
-    <NavBack :name="msg" @backjump="backjump"/>
+    <NavBack :name="msg" @backjump="backjump" />
 
-    <img class="AddImg" src="../../assets/friends/gengduo.png" alt>
+    <img class="AddImg" src="../../assets/friends/gengduo.png" alt />
     <!-- 主题内容 -->
     <div id="Biddd" :style="{height:(screenHeight-80)+'px'}">
       <div v-for="(item, index) in messageList" :key="index">
         <template>
-          <chatMsg v-if="item.myself" :logo="msgslist.logo" :msgs="item.message"/>
-          <chatMyMsg v-else :logo="myMsg.logo" :msgs="item.message"/>
+          <chatMsg v-if="item.myself" :logo="msgslist.logo" :msgs="item.message" />
+          <chatMyMsg v-else :logo="myMsg.logo" :msgs="item.message" />
         </template>
       </div>
       <div class="footg"></div>
     </div>
     <!-- 最底层 -->
     <div class="foootBox">
-      <img class="Voice" src="../../assets/friends/Voice.png" alt>
-      <img class="biaoQing" src="../../assets/friends/biaoqing.png" alt>
+      <img class="Voice" src="../../assets/friends/Voice.png" alt />
+      <img class="biaoQing" src="../../assets/friends/biaoqing.png" alt />
       <template>
-        <img v-show="!my_msg" class="biaoQing ass" src="../../assets/friends/icon02.png" alt>
+        <img v-show="!my_msg" class="biaoQing ass" src="../../assets/friends/icon02.png" alt />
         <span v-show="my_msg" @click="sendJump" class="sendJump">发送</span>
       </template>
-      <input type="text" class="ipt" v-model="my_msg" @keyup.enter="sendJump">
+      <input type="text" class="ipt" v-model="my_msg" @keyup.enter="sendJump" />
     </div>
   </div>
 </template>
@@ -35,7 +35,12 @@ import logo from "../../assets/logoImg.jpg";
 import logo1 from "../../assets/9.jpg";
 const msgData = {
   logo: logo,
-  msgList: ["帅哥进来玩啊", "我有个好东西送给你", "s什么？不要啊", "不要就算了"]
+  msgList: [
+    "帅哥进scscscascascas来玩啊",
+    "我有个好东西送给你",
+    "s什么？不scscsc要啊",
+    "不要就算了"
+  ]
 };
 export default {
   name: "WeChatShow",

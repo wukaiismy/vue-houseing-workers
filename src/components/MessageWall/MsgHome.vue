@@ -179,11 +179,6 @@ export default {
           mescroll.endSuccess(this.datas.length);
         });
       }, 1500);
-
-      // }).catch((e) => {
-      //   // 联网失败的回调,隐藏下拉刷新和上拉加载的状态;
-      //   mescroll.endErr()
-      // })
     }
   }
 };
